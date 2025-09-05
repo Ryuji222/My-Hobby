@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Why I love going to the gym – building strength, confidence, and a healthier lifestyle through fitness and discipline." />
+  <title>My Fitness Journey: Loving the Gym</title>
+  <style>
+    /* Modern Fitness Theme */
+    :root {
+      --primary: #e63946;
+      --secondary: #1d3557;
+      --accent: #a8dadc;
+      --light: #f1faee;
+      --dark: #1a1a2e;
+      --success: #2a9d8f;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      opacity: 0.9;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: var(--primary);
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1.2em;
+      border-left: 4px solid var(--accent);
+      padding-left: 15px;
+    }
+
+    p#textParagraph {
+      font-size: 1.1em;
+      color: #444;
+      background: var(--light);
+      padding: 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 25px 0;
+    }
+
+    .btn {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:hover {
+      background-color: #c1121f;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn.remove {
+      background-color: #6c757d;
+    }
+
+    .btn.remove:hover {
+      background-color: #5a6268;
+    }
+
+    h2 {
+      color: var(--secondary);
+      margin-top: 30px;
+      font-size: 1.6em;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+
+    ul#reasonsList {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    li {
+      background: var(--accent);
+      margin: 8px 0;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fadeIn 0.5s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 25px 0;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #6c757d;
+      font-size: 0.9em;
+      border-top: 1px solid #eee;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💪 I Love the Gym</h1>
+      <div class="subtitle">Strength, Sweat, and Success</div>
+    </header>
+
+    <main>
+      <p id="textParagraph">
+        Going to the gym isn't just about lifting weights — it's about building discipline, confidence, and a stronger version of myself every single day.
+      </p>
+
+      <div class="btn-container">
+        <button class="btn" id="changeTextBtn">Change Message</button>
+        <button class="btn" id="addListItemBtn">Add Reason</button>
+        <button class="btn remove" id="removeElementBtn">Remove Last</button>
+      </div>
+
+      <h2>Why I Keep Coming Back</h2>
+      <ul id="reasonsList">
+        <li>It clears my mind and reduces stress</li>
+        <li>I feel stronger every week</li>
+        <li>The gym is my happy place</li>
+      </ul>
+
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Person lifting weights in a modern gym with dumbbells" />
+
+      <p class="quote">
+        “The body achieves what the mind believes.”
+      </p>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> My Fitness Journey | Built with 💪 and code
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
